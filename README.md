@@ -1,4 +1,4 @@
-<img src="https://badgen.net/static/Platform/iOS?color=4C5279"> <img src="https://badgen.net/github/tag/karami-mehdi/aisightquest?color=6D609E"> <img src="https://badgen.net/github/license/karami-mehdi/aisightquest?color=A292B1">
+<img src="https://badgen.net/static/Platform/iOS?color=4C5279"> <img src="https://badgen.net/github/tag/karami-mehdi/aisightquest?color=6D609E"> <img src="https://badgen.net/github/license/karami-mehdi/aisightquest?color=A290B1">
 
 <p align="center"> <img src="Documentation/AISightQuest.png" width="350" height="350"/> </p>
 
