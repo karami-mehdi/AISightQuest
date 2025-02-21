@@ -1,4 +1,4 @@
-<img src="https://badgen.net/static/Platform/iOS?color=4C5279"> <img src="https://badgen.net/github/tag/nsswifter/aisightquest?color=6D609E"> <img src="https://badgen.net/github/license/nsswifter/aisightquest?color=A292B1">
+<img src="https://badgen.net/static/Platform/iOS?color=4C5279"> <img src="https://badgen.net/github/tag/karami-mehdi/aisightquest?color=6D609E"> <img src="https://badgen.net/github/license/karami-mehdi/aisightquest?color=A292B1">
 
 <p align="center"> <img src="Documentation/AISightQuest.png" width="350" height="350"/> </p>
 
@@ -45,7 +45,7 @@ To set up and run the application, please follow these steps:
 1. Begin by **cloning** the repository onto your local machine.
 2. Owing to the substantial size of the BERT model, it is not directly integrated into the project. You may acquire it by **downloading** it from the following link:
 
-<a href="https://ml-assets.apple.com/coreml/models/Text/QuestionAnswering/BERT_SQUAD/BERTSQUADFP16.mlmodel"> <img src="https://github.com/nsswifter/nsswifter/blob/main/assets/core_ml.png" width="40" height="40"/></a> [BERT Model Download Link](https://ml-assets.apple.com/coreml/models/Text/QuestionAnswering/BERT_SQUAD/BERTSQUADFP16.mlmodel)
+<a href="https://ml-assets.apple.com/coreml/models/Text/QuestionAnswering/BERT_SQUAD/BERTSQUADFP16.mlmodel"> <img src="https://github.com/karami-mehdi/karami-mehdi/blob/main/assets/core_ml.png" width="40" height="40"/></a> [BERT Model Download Link](https://ml-assets.apple.com/coreml/models/Text/QuestionAnswering/BERT_SQUAD/BERTSQUADFP16.mlmodel)
 
 3. **Rename** the downloaded BERT model to `BERTSQUAD.mlmodel`
 4. **Open** the project in Xcode and **integrate** the downloaded model into the project structure at the designated location:
