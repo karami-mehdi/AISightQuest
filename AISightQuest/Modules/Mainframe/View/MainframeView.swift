@@ -8,6 +8,7 @@
 import SwiftUI
 import SwiftData
 import TipKit
+import Lottie
 
 // MARK: - Mainframe View
 
@@ -30,12 +31,12 @@ struct MainframeView: View {
                 Group {
                     if viewModel.sessions.isEmpty {
                         VStack {
-                            LottieView(name: colorScheme == .dark
-                                       ? "Mainframe-Lottie-Dark-Mode"
-                                       : "Mainframe-Lottie-Light-Mode"
-                                       , loopMode: .loop)
-                                .aspectRatio(contentMode: .fit)
-                                .padding(.horizontal, 20)
+                            LottieView(animation: .named(colorScheme == .dark
+                                                         ? "Mainframe-Lottie-Dark-Mode"
+                                                         : "Mainframe-Lottie-Light-Mode"))
+                            .playing(loopMode: .loop)
+                            .aspectRatio(contentMode: .fit)
+                            .padding(.horizontal, 20)
                             
                             Spacer()
                         }

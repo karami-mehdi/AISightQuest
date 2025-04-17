@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import Lottie
 
 // MARK: - Splash View
 
@@ -22,10 +23,11 @@ struct SplashView: View {
             Color.clear
             
             if !isFirstOpen {
-                LottieView(name: colorScheme == .dark
-                           ? "AI-Sight-Quest-Lottie-Dark-Mode"
-                           : "AI-Sight-Quest-Lottie-Light-Mode")
-                    .frame(width: 250, height: 250)
+                LottieView(animation: .named(colorScheme == .dark
+                                             ? "AI-Sight-Quest-Lottie-Dark-Mode"
+                                             : "AI-Sight-Quest-Lottie-Light-Mode"))
+                .playing()
+                .frame(width: 250, height: 250)
             }
         }
         .onAppear {

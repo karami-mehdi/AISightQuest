@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import Lottie
 
 // MARK: - Intro View
 
@@ -59,7 +60,8 @@ private extension IntroView {
             let firstIntro = Intro.Data.getFirstIntro(colorScheme: colorScheme)
             
             VStack(spacing: 10) {
-                LottieView(name: firstIntro.imageName)
+                LottieView(animation: .named(firstIntro.imageName))
+                    .playing()
                     .padding(90)
                     .aspectRatio(contentMode: .fill)
                     .frame(width: size.width, height: size.height / 2)
@@ -73,7 +75,9 @@ private extension IntroView {
                     .padding(.horizontal, 30)
                 
                 Button {
-                    showWalkThroughScreens.toggle()
+                    withAnimation(.interactiveSpring) {
+                        showWalkThroughScreens.toggle()
+                    }
                 } label: {
                     Text("first intro button text")
                         .fontWeight(.semibold)
@@ -86,7 +90,7 @@ private extension IntroView {
                 .buttonStyle(CustomButtonStyle())
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-            // MARK: Moving Up When Click
+            // MARK: Moving Up When Clicked
             .offset(y: showWalkThroughScreens ? (-size.height) : 0)
         }
         .ignoresSafeArea()
@@ -190,7 +194,8 @@ private extension IntroView {
                                               blendDuration: 0.5).delay(0.1),
                            value: currentIndex)
             
-            LottieView(name: intro.imageName, loopMode: .loop)
+            LottieView(animation: .named(intro.imageName))
+                .playing(loopMode: .loop)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: size.width * 0.7, alignment: .top)
                 .padding(.horizontal, 20)
@@ -208,7 +213,8 @@ private extension IntroView {
     @ViewBuilder
     func WelcomeView(size: CGSize, index: Int) -> some View {
         VStack(spacing: 10) {
-            LottieView(name: Intro.Data.lastIntro.imageName, loopMode: .loop)
+            LottieView(animation: .named(Intro.Data.lastIntro.imageName))
+                .playing(loopMode: .loop)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: size.width * 0.7, alignment: .top)
                 .padding(.horizontal, 20)

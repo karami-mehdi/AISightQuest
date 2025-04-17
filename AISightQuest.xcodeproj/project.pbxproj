@@ -36,7 +36,6 @@
 		919F8D1F2B94CC8F003E735A /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919F8D1E2B94CC8F003E735A /* SplashRouter.swift */; };
 		919F8D212B94CC9B003E735A /* SplashFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919F8D202B94CC9B003E735A /* SplashFactory.swift */; };
 		919F8D232B94CCA5003E735A /* SplashDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919F8D222B94CCA5003E735A /* SplashDependencyContainer.swift */; };
-		919F8D252B94CE24003E735A /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919F8D242B94CE24003E735A /* LottieView.swift */; };
 		919F8D2A2B94CEB1003E735A /* AI-Sight-Quest-Lottie-Light-Mode.json in Resources */ = {isa = PBXBuildFile; fileRef = 919F8D292B94CEB1003E735A /* AI-Sight-Quest-Lottie-Light-Mode.json */; };
 		919F8D2C2B94D52F003E735A /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919F8D2B2B94D52F003E735A /* UserDefaults.swift */; };
 		919F8D2E2B94D579003E735A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919F8D2D2B94D579003E735A /* StorageManager.swift */; };
@@ -104,7 +103,6 @@
 		919F8D1E2B94CC8F003E735A /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
 		919F8D202B94CC9B003E735A /* SplashFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashFactory.swift; sourceTree = "<group>"; };
 		919F8D222B94CCA5003E735A /* SplashDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashDependencyContainer.swift; sourceTree = "<group>"; };
-		919F8D242B94CE24003E735A /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		919F8D292B94CEB1003E735A /* AI-Sight-Quest-Lottie-Light-Mode.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "AI-Sight-Quest-Lottie-Light-Mode.json"; sourceTree = "<group>"; };
 		919F8D2B2B94D52F003E735A /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		919F8D2D2B94D579003E735A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
@@ -503,7 +501,6 @@
 			children = (
 				914BFE142BB9B111007C911E /* CustomButtonStyle.swift */,
 				91C6B6FD2BDC272800BD42A3 /* CustomProgressView.swift */,
-				919F8D242B94CE24003E735A /* LottieView.swift */,
 				9141CF052BDC451E00DFAD4B /* SpeakerImage.swift */,
 				9175871E2BDAF75A005BE5FB /* Stack.swift */,
 				91ECF92C2B93E62300517B67 /* TextView.swift */,
@@ -598,7 +595,6 @@
 			files = (
 				91C5CB8B2B8B630800132C1E /* SessionFactory.swift in Sources */,
 				91A7A97A2BC8942B00F79CB6 /* SpeechManager.swift in Sources */,
-				919F8D252B94CE24003E735A /* LottieView.swift in Sources */,
 				919F8D0B2B94C905003E735A /* IntroRouter.swift in Sources */,
 				919F8D0D2B94CA80003E735A /* IntroFactory.swift in Sources */,
 				91ECF9272B93E51E00517B67 /* TokenizedString.swift in Sources */,
